@@ -23,7 +23,7 @@ function Row(props){
     };
 
     return (
-        <div style={cellStyle}> {props.current} x {props.number} = {props.result} </div>
+        <tr key={props.current} style={cellStyle}> {props.current} x {props.number} = {props.result} </tr>
     );
 }
 
