@@ -9,7 +9,7 @@ import ProgressBar from './components/progress_bar.jsx'
 function App() {
   return (
     <>
-    <Card color = "#000000"/>
+    {/*<Card color = "#000000"/>
     <Card color = "#7dbe32"/>
     <Card color = "#190b6b"/>
     <Hello target="Batman"/>
@@ -19,7 +19,7 @@ function App() {
     <Letter bgColor= "blue">E</Letter>
     <Letter bgColor= "green">I</Letter>
     <Letter bgColor= "yellow">O</Letter>
-    <Letter bgColor= "purple">U</Letter>
+    <Letter bgColor= "purple">U</Letter>*/}
     <MultiplicationTable number= "5"/>
     <Rater rating = {1} max = {5}/>
     <Rater rating = {3} max = {3}/>

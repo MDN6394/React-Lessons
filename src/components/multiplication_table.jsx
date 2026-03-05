@@ -9,7 +9,7 @@ function Header(props){
     };
 
     return (
-        <div style={headerStyle}> {props.number} </div>
+        <th style={headerStyle}> {props.number} </th> // Don't forget "th" when creating headers
     );
 
 
@@ -23,7 +23,7 @@ function Row(props){
     };
 
     return (
-        <tr key={props.current} style={cellStyle}> {props.current} x {props.number} = {props.result} </tr>
+        <tr key={props.current} style={cellStyle}><td>{props.current} x {props.number} = {props.result}</td></tr> // Don't forget "td" and keys when creating rows
     );
 }
 
@@ -40,7 +40,7 @@ function MultiplicationTable(props){
 
     let rows = []
     for (var i = 1; i <= 10; i++){
-        rows.push(<Row number = {props.number} current = {i} result = {props.number*i}/>)
+        rows.push(<Row key={i} number = {props.number} current = {i} result = {props.number*i}/>)
     }
 
     return (

@@ -62,10 +62,10 @@ function Rater(props){
     return(
         <table style={tableStyle}>
             <thead>
-                <tr><Label score={props.rating/props.max}/></tr>
+                <tr><th><Label score={props.rating/props.max}/></th></tr>
             </thead>
             <tbody>
-                <tr>{stars}</tr>
+                <tr><td>{stars}</td></tr>
             </tbody>
             
         </table>
